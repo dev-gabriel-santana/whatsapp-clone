@@ -31,6 +31,7 @@ import androidx.compose.ui.unit.sp
 import com.example.whatsappclone.ui.theme.WhatsAppCloneTheme
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.setValue
+import com.example.whatsappclone.chatsList.ChatsListScreen
 import com.example.whatsappclone.lists.ITopAppBarItem
 import com.example.whatsappclone.lists.ScreenItem
 import com.example.whatsappclone.lists.bottomBarItems
@@ -115,16 +116,7 @@ fun TopBar(item: ITopAppBarItem) {
 }
 
 
-@Composable
-fun ChatsListScreen(modifier: Modifier = Modifier) {
-    Box(modifier.fillMaxSize()) {
-        Text(
-            "Chats List", Modifier.align(Alignment.Center), style = TextStyle.Default.copy(
-                fontSize = 32.sp
-            )
-        )
-    }
-}
+
 
 @Composable
 fun UpdatesScreen(modifier: Modifier = Modifier) {
